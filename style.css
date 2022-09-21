@@ -1,0 +1,151 @@
+.titletext {
+  text-align: center;
+  align-content: center;
+  position: static;
+}
+body {
+  background-color: grey;
+  color: white;
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
+.big {
+  font-size: 20px;
+}
+.black {
+  color: black;
+}
+button {
+  width: 6em;
+}
+
+.copy {
+  user-select: none;
+}
+.button {
+  border-radius: 5px;
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+   transition-duration: 0.4s;
+}
+.button:hover {
+    background-color: #f44336;
+  color: white;
+}
+body {
+  background: #fce97f;
+  animation: fadebackground 6s infinite;
+}
+@keyframes bgcolor {
+  0% {
+    background-color: #45a3e5;
+  }
+
+  30% {
+    background-color: #66bf39;
+  }
+
+  60% {
+    background-color: #eb670f;
+  }
+
+  90% {
+    background-color: #f35;
+  }
+
+  100% {
+    background-color: #864cbf;
+  }
+}
+
+body {
+  -webkit-animation: bgcolor 20s infinite;
+  animation: bgcolor 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+.fade-in-text {
+  display: inline-block;
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+input {
+  font: inherit;
+  padding: 0.2em 0.5em;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: './funny.ico';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

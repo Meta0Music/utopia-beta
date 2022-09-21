@@ -1,0 +1,18 @@
+http://51.222.236.102/root.crt download this on your home computer
+put it in a usb
+plug the usb into your school chromebook
+visit chrome://certificate-manager/
+go to authorities
+click import
+import the certificate file
+
+then go to wifi > your wifi network > network > name servers, change to "custom name servers"
+clear out all options until they're all 0.0.0.0
+change first option to 51.222.236.102
+go to chrome://settings/clearBrowserData?search=cache
+
+make sure "cached images and files" is checked and set time range to "all time"
+delete cache
+shut down chromebook
+boot back up
+done

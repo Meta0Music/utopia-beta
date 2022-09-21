@@ -1,0 +1,46 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"><title>Utopia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/jpg" href="./funny.ico"/>
+</head>
+
+<body>
+
+  <div class="titletext copy fade-in-text">  
+    <h1>Utopia</h1>
+    <h3>a goguardian unblock tool</h3>  
+    <a class="button" href="./firewall.html" >change</a>&nbsp;<a href="tabcloak.html" class="button"><span>TabCloak</span></a>
+    <a class="button green" href="./firewall.html">firewall</a>
+    <a class="button green" href="./fortinet.html">fortinet</a>
+    <a class="button green" href="./jail.html">iboss</a>
+
+  </div><br>
+  <div class="big black copy fade-in-text">
+    <h1>GoUnblock (Unblock most goguardian sites)</h1>
+  </div>
+
+  <head>
+
+  </head>
+
+  <body>
+    <h1 class="copy fade-in-text">Type in your goguardian-blocked website without the https, and copy into a bookmarklet.</h1>
+    <input id="userinput">
+
+    <button class="button fade-in-text" onclick="greetings()">Unblock</button>
+    <script>
+      function greetings() {
+        var x = 'javascript:((function()%7Bvar a,b,c;c="';
+        var ad = document.getElementById("userinput").value;
+        alert(x + 'https://' + ad + '",b=document.createElement("iframe"),b.setAttribute("src",c),b.setAttribute("id","rusic-modal"),b.setAttribute("style","position: fixed; z-index: 999999; width: 1080px; height:523px; right: 10px; top: 10px; border: 5px solid #8834af; overflow: hidden; background-color: #fff;"),a=document.getElementsByTagName("body")%5B0%5D,a.appendChild(b)%7D)).call(this)');
+      }
+    </script>
+    <p style="border:3px; border-style:solid; border-color:#eb6434; padding: 1em;" class="copy fade-in-text">the way this works is that goguardian actually needs to access the ACTUAl url for a site. However, this bookmarklet will let you embed things, meaning that it is embedded within a totally separate page (a different link) and overall unblocked by goguardian.</p>
+  </body>
+  <div class="big black copy fade-in-text">
+    <h1>
+  </div>
+   <script src="script.js"></script> 
+</body>
